@@ -1,16 +1,19 @@
-module linear_regression_prediction (
+module linear_regression_prediction #(
+	parameter N = 32
+)
+(
     input i_clock,
     input i_reset,
-    input [31:0] i_samples_x_in,   
+    input [N-1:0] i_samples_x_in,   
     input i_samples_x_vld, 
-    input [31:0] i_theta0_out,    
-    input [31:0] i_theta1_out,    
+    input [N-1:0] i_theta0_out,    
+    input [N-1:0] i_theta1_out,    
     input i_theta1_out_vld, 
     output reg  o_predict_out_vld, 
-    output reg [31:0] o_predict_out    
+    output reg [N-1:0] o_predict_out    
 );
 
-    reg [31:0] theta1_x; 
+    reg [N-1:0] theta1_x; 
     always @(posedge i_clock or negedge i_reset) begin
         if (!i_reset) begin
             o_predict_out = 32'd0;
