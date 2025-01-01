@@ -12,13 +12,13 @@ Prediction (linear_regression_prediction): Predicts output values based on estim
 
 Modules
 
-1. linear_regression_estimation
+1. linear_regression_estimation:
 This module calculates the parameters theta0 (intercept) and theta1 (slope) of the regression line using the input datasets (x_values and z_values).
 Key Features:
 Handles data accumulation and matrix calculations.
 Computes parameters through division sub-modules.
 Validates output with control signals.
-2. linear_regression_prediction
+2. linear_regression_prediction:
 This module takes the estimated parameters and predicts output values for new inputs.
 Key Features:
 Computes predictions based on the formula:
