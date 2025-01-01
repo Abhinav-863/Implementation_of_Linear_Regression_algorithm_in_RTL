@@ -1,1 +1,1 @@
-# Implementation-of-Linear-Regression-algorithm-in-RTL-for-the-ML-acceleration-platform-realization
+# Implementation-of-Linear-Regression-algorithm-in-RTL
